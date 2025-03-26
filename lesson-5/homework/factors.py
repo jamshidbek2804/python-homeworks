@@ -1,13 +1,13 @@
-def factor(n):
-    
-    for a in range(0, n):
-        a += 1
-        if n % a ==0:
-            print(f" {a} is factor in {n}")
+def factor(num):
+    i = 1
+    for i in range(i, num+1):
+        if num % i == 0:
+            print(f"{i} soni {num} ning bo'luvchisi")
+            i += 1
 
 def main():
-    factors = int(input("n natural sonni kiriting: "))
-    factor(factors)
+    factor_num = int(input("Enter a positive integer: "))
+    factor(factor_num)
 
 if __name__ == "__main__":
     main()

@@ -1,16 +1,14 @@
 def invest(amount, rate, years):
-    
-    for year in range( 1, years+1):
-        amount += amount* rate
-        print(f"year {year} : {amount} ")
+    i = 1
+    while (i <= years):
+        amount += amount*rate
+        print(f"year {i}: ${amount: .2f}")
+        i += 1
 
 def main():
-    deposit=float(input("Enter the deposit: "))
-    foiz=float(input("Enter the rate years: "))
-    yil=int(input("Enter the whole year : "))
-    invest(deposit, foiz, yil)
-    print
+    depozit = float(input("Enter the initial amount: "))
+    foiz = float(input("Enter the annual interest rate (as a decimal): "))
+    yil = int(input("Enter the number of years: "))
+    invest(depozit, foiz, yil)
 if __name__=="__main__":
     main()
-   
-
