@@ -5,10 +5,9 @@ def check(divided):
         return divided(a, b)
     return wrapper
 
-@check
+@check 
 def div(a, b):
     return a / b
 
-
-print(div(25, 5))  
-print(div(25, 0))  
+print(div(6, 2))
+print(div(6, 0))
