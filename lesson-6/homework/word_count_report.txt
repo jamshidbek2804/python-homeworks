@@ -1,0 +1,8 @@
+Word count report
+Total words: 16
+Top 5 words:
+file - 3
+is - 3
+a - 2
+this - 2
+for - 1
